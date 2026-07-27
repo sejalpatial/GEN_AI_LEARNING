@@ -1,0 +1,9 @@
+user writes the query
+
+display the query
+
+give the query to llm
+
+get response from llm 
+
+display response
