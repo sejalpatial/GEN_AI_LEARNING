@@ -2,4 +2,4 @@ streamlit #ui
 python-dotenv #to put your api keys
 langchain
 langchain-community #initialize the llm
-langchain-groq #llm
+langchain-groq #llm 
