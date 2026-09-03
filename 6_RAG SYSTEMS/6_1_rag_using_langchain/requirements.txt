@@ -1,0 +1,11 @@
+langchain-community #Community integrations for document loaders, tools, retrievers, etc.
+langchain-classic #classic LangChain components and APIs used by some existing RAG code
+langchain-text-splitters #used to chunk data in small pieces
+langchain-huggingface #Connects LangChain with Hugging Face models, especially for embeddings
+chromadb #Vector database used to store embeddings and search for similar chunks
+langchain-chromadb #LangChain integration/wrapper for ChromaDB
+langchain-groq #Allows LangChain to communicate with Groq-hosted LLMs
+sentence-transformer #Used for embedding text — converting text into numerical vectors
+unstructured #Helps extract/parse content from different document formats
+unstructured[pdf] #Adds PDF-specific dependencies so unstructured can process PDFs
+nltk #Natural-language processing utilities; may be used for text preprocessing/tokenization

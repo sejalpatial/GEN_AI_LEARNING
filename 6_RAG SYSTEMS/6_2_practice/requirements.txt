@@ -1,0 +1,11 @@
+langchain-community
+langchain-classic
+langchain-text-splitters
+langchain-huggingface
+chromadb
+langchain-chromadb
+langchain-groq
+sentenced-transformer
+nltk
+unstructured
+unstructured[pdf]
