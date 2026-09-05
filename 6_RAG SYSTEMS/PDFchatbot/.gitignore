@@ -1,0 +1,25 @@
+# Virtual environment
+.venv/
+
+# PyCharm
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables / API keys
+.env
+
+# Chroma vector database
+doc_vectorstore/
+
+# PDF files
+*.pdf
+
+# Streamlit cache
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db

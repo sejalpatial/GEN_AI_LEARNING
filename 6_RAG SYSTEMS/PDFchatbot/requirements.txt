@@ -1,0 +1,12 @@
+python-dotenv          # Reads .env file and loads API keys as environment variables
+streamlit              # Creates the web-based user interface for the chatbot
+sentence-transformers  # Converts text into numerical embeddings for semantic search
+langchain              # Framework for building and connecting the RAG pipeline
+langchain-community    # Provides additional community integrations for LangChain
+langchain-huggingface  # Connects Hugging Face models with LangChain
+langchain-text-splitters # Splits PDF text into smaller chunks
+unstructured           # Extracts and processes content from PDF/document files
+unstructured[pdf]      # Installs additional dependencies required for PDF processing
+langchain-unstructured # Connects Unstructured document processing with LangChain
+langchain-chroma       # Connects LangChain with Chroma vector database
+langchain-groq         # Connects LangChain with Groq LLMs
