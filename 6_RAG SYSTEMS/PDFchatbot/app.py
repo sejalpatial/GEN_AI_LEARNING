@@ -24,8 +24,21 @@ if uploaded_file is not None:
 user_question=st.text_area("Question Answering")
 
 if st.button("Answer"):
-    answer=answer_question(user_question)
-    st.markdown(answer)
+
+    if user_question:
+
+        answer, source_documents = answer_question(user_question)
+
+        st.markdown(answer)
+
+        st.subheader("Sources")
+
+        for doc in source_documents:
+            source = doc.metadata.get("source", "Unknown")
+            st.write(source)
+
+    else:
+        st.warning("Please enter a question.")
 
 
 

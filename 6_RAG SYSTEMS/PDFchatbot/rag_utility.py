@@ -54,16 +54,20 @@ def answer_question(user_question):
         embedding_function=embedding
     )
     #create a retriever for document search
-    retriever=vectordb.as_retriever()
+    retriever=vectordb.as_retriever(
+        search_kwargs={"k":5}
+    )
 
     #create a RetrievalQA chain to answer user questions
     qa_chain=RetrievalQA.from_chain_type(
         llm=llm,
         chain_type="stuff",
         retriever=retriever,
+        return_source_documents=True
     )
     response=qa_chain.invoke({"query": user_question}) #this automatically embeds the questions and performs similarity search
     answer=response["result"]
-    return answer
+    source_documents=response["source_documents"]
+    return answer,source_documents
 
 
